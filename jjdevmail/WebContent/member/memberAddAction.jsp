@@ -24,7 +24,7 @@
 	System.out.println("memberAge:" +memberAge);
 	
 	String driver = "com.mysql.jdbc.Driver";
-	String url = "jdbc:mysql://localhost:3306/jjdevmail?useUnicode=true&characterEncoding=utf-8";
+	String url = "jdbc:mysql://localhost:3306/jjdevmall?useUnicode=true&characterEncoding=utf-8";
 	String dbUser = "root";
 	String dbPw = "java0000";
 	
