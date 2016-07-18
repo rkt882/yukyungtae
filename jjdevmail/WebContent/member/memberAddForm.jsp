@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -42,22 +42,22 @@
 <form id="mForm" action="./memberAddAction.jsp" method="post">
 	<table>
 		<tr>
-			<td>멤버아이디</td>
+			<td>아이디</td>
 			<td><input id="memberId" name="memberId" type="text"></td>
 		</tr>		
 
 		<tr>
-			<td>멤버비번</td>
+			<td>비번</td>
 			<td><input id="memberPw" name="memberPw" type="password"></td>
 		</tr>
 
 		<tr>
-			<td>멤버이름</td>
+			<td>이름</td>
 			<td><input id="memberName" name="memberName" type="text"></td>
 		</tr>
 
 		<tr>
-			<td>멤버성별</td>
+			<td>성별</td>
 			<td>
 			<input id="memberSex" name="memberSex" type="radio" value="M">남
 			<input id="memberSex" name="memberSex" type="radio" value="W">여
@@ -65,9 +65,11 @@
 		</tr>
 
 		<tr>
-			<td>멤버나이</td>
+			<td>나이</td>
 			<td><input id="memberAge" name="memberAge" type="text"></td>
 		</tr>
+		
+
 
 		<tr>
 			<td>
