@@ -40,7 +40,7 @@
 	stmt.setString(3, memberName);
 	stmt.setString(4, memberSex);
 	stmt.setString(5, memberAge);
-;
+
 	
 	stmt.executeUpdate();
 %>

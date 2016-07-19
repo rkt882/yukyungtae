@@ -31,7 +31,7 @@
 <body>
 <h1>INDEX</h1>
 <%
-	String sessionMemberId = (String)session.getAttribute("sessioMemberId");
+	String sessionMemberId = (String)session.getAttribute("sessionMemberId");
 	if(sessionMemberId == null) { 
 %>
 		<form id="indexForm" action="<%=request.getContextPath()%>/admin/member/adminLoginAction.jsp">
@@ -55,7 +55,7 @@
 <%		
 	} else { 
 %>
-		<%=sessionMemberId%>님 반갑습니다.<a href="">[회원정보]</a><a href="">[로그아웃]</a>
+		<%=sessionMemberId%>님 반갑습니다.<a href="">[회원정보]</a><a href="<%=request.getContextPath()%>/admin/member/adminLogout.jsp">[로그아웃]</a>
 <%		
 	}
 %>
