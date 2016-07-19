@@ -34,7 +34,7 @@
 	String sessionMemberId = (String)session.getAttribute("sessionMemberId");
 	if(sessionMemberId == null) { 
 %>
-		<form id="indexForm" action="<%=request.getContextPath()%>/admin/member/adminLoginAction.jsp">
+		<form id="indexForm" action="<%=request.getContextPath()%>/member/memberLoginAction.jsp">
 		<div>
 			<label>아이디</label>
 			<input id="memberId" type="text" name="memberId">
@@ -55,7 +55,7 @@
 <%		
 	} else { 
 %>
-		<%=sessionMemberId%>관리자로 로그인 하셨습니다.<a href="">[회원정보]</a><a href="<%=request.getContextPath()%>/admin/member/adminLogout.jsp">[로그아웃]</a>
+		<%=sessionMemberId%>일반회원으로 로그인하셨습니다.<a href="">[회원정보]</a><a href="<%=request.getContextPath()%>/member/memberLogout.jsp">[로그아웃]</a>
 <%		
 	}
 %>
