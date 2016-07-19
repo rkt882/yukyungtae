@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +34,7 @@
 	String sessionMemberId = (String)session.getAttribute("sessioMemberId");
 	if(sessionMemberId == null) { 
 %>
-		<form id="indexForm" action="<%=request.getContextPath()%>/member/adminLoginAction.jsp">
+		<form id="indexForm" action="<%=request.getContextPath()%>/admin/member/adminLoginAction.jsp">
 		<div>
 			<label>아이디</label>
 			<input id="memberId" type="text" name="memberId">
