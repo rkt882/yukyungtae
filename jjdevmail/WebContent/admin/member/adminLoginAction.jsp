@@ -49,7 +49,7 @@
 		
 	}
 
-	response.sendRedirect(request.getContextPath()+"/index.jsp");
+	response.sendRedirect(request.getContextPath()+"/admin/adminIndex.jsp");
 	System.out.println("인덱스 페이지로 이동");
 %>
 </body>
